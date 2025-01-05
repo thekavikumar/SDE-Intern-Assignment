@@ -20,7 +20,7 @@ router.get('/users/:id', async (req: Request, res: Response) => {
 });
 
 // 2. Get Transactions for a User by ID with Filters
-router.get('/users/:id/transactions', async (req: Request, res: Response) => {
+router.get('/transactions/user/:id', async (req: Request, res: Response) => {
   try {
     const userId = req.params.id;
     const { status, type, from, to, page = 1, limit = 10 } = req.query;
