@@ -201,6 +201,8 @@ This project demonstrates how to build a modular React Native application and a 
 
 - **Backend API**: [https://travel-assignment-kdi3.onrender.com](https://travel-assignment-kdi3.onrender.com)
 - **Postman Collection**: [View the Postman collection](https://orbit-wallet-backend-assignment.postman.co/workspace/Orbit-Wallet-Backend-Assignment~a2540362-7985-4d19-9ced-bf85dac1d992/collection/33039809-8fc06686-3172-4114-b82f-a4f857200c53?action=share&creator=33039809)
+- **LinkedIn Profile**: [Kavi Kumar](https://www.linkedin.com/in/thekavikumar/)
+- **Github Profile**: [Kavi Kumar](https://github.com/thekavikumar)
 
 ```
 
