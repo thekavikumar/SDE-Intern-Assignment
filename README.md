@@ -45,7 +45,7 @@ The app is structured in a modular way, adhering to the principles of **DRY** an
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/thekavikumar/travel-assignment
+   git clone https://github.com/thekavikumar/SDE-Intern-Assignment.git
    cd react-native-assignment
    ```
 
@@ -93,7 +93,7 @@ The backend provides three main APIs for interacting with user and transaction d
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/thekavikumar/travel-assignment
+   git clone https://github.com/thekavikumar/SDE-Intern-Assignment.git
    cd backend
    ```
 
