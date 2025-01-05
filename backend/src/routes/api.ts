@@ -11,6 +11,12 @@ const router = express.Router();
 router.get('/users/:id', async (req: Request, res: Response) => {
   try {
     const userId = req.params.id;
+
+    // Validate ObjectId
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+      return res.status(400).json({ message: 'Invalid user ID' });
+    }
+
     const user = await User.findById(userId);
     if (!user) return res.status(404).json({ message: 'User not found' });
     res.status(200).json(user);
@@ -20,11 +26,17 @@ router.get('/users/:id', async (req: Request, res: Response) => {
 });
 
 // 2. Get Transactions for a User by ID with Filters
+// @ts-ignore
 router.get('/transactions/user/:id', async (req: Request, res: Response) => {
   try {
     const userId = req.params.id;
     const { status, type, from, to, page = 1, limit = 10 } = req.query;
     // console.log('userId', userId);
+
+    // Validate ObjectId
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+      return res.status(400).json({ message: 'Invalid user ID' });
+    }
 
     const filters: any = { userId: new mongoose.Types.ObjectId(userId) };
     // console.log('filters', filters);
